@@ -1,0 +1,25 @@
+.tile {
+   -fx-border-color: gray;
+   -fx-border-radius: 5;
+}
+
+.currency-list{
+    -fx-focus-color: white;
+}
+
+
+.list-cell{
+    -fx-font-size: 18px;
+}
+
+.list-cell:hover {
+    -fx-background-color: lightgray;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #D69E3C;
+}
+
+.top{
+    -fx-background-color: orange;
+}

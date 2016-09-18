@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="natureofcodefx.MainController">
+   <left>
+      <ListView fx:id="examplesList" prefHeight="488.0" prefWidth="197.0" styleClass="currency-list" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <AnchorPane prefHeight="95.0" prefWidth="618.0" styleClass="top" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the nature of code in" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="Segoe UI" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="javafx canvas" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="40.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="93.0" fitWidth="89.0" layoutX="344.0" layoutY="5.0" onMouseClicked="#fxperimentsMouseCliked" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="344.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@logo%20white.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="273.0" layoutY="10.0" onMouseClicked="#githubMouseCliked" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="273.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@github.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <stylesheets>
+      <URL value="@Main.css" />
+      <URL value="@JMetroLightTheme.css" />
+   </stylesheets>
+   <center>
+      <StackPane fx:id="contentPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin></StackPane>
+   </center>
+</BorderPane>
